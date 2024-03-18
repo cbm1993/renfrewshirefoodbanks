@@ -1,0 +1,81 @@
+<!-- This is an HTML file which contains the basic structure of a webpage -->
+<!DOCTYPE html>
+<html>
+  <!-- The head section contains meta data, stylesheets and script files that are necessary for the webpage -->
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBEPCJ6HST"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MBEPCJ6HST');
+   </script>
+    <title>Renfrewshire Foodbanks</title>
+    <!-- Sets the title of the webpage -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Specifies the viewport for responsive web design -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Imports the 'Roboto' font from Google Fonts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Imports the Bootstrap CSS stylesheet -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Imports a custom CSS stylesheet for the webpage -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb1ZROsma_QQlbCgl0_Kx6CUktHOD08Ow"></script>
+    <!-- Loads the Google Maps JavaScript API, requires a valid API key to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Loads the jQuery library -->
+    <script src="script.js"></script>
+    <!-- Imports the Bootstrap JavaScript bundle (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Imports a custom JavaScript file for the webpage -->
+  </head>
+  <!-- The body section contains the content of the webpage that is visible to the user -->
+  <body>
+    <div class="container">
+    <a href="https://www.renfrewshire.gov.uk/" target="_blank"><img src="renfrewshirecouncil.png" alt="Renfrewshire Council" class="logo" /></a>
+      <!-- Displays the logo image -->
+      <!-- A form to search for foodbanks in a specific postcode area -->
+      <form>
+        <div class="form-group">
+          <h1 class="mb-4">Renfrewshire Foodbanks</h1>
+          <!-- Displays a heading for the webpage -->
+          <label for="postcode">Enter your postcode:</label>
+          <!-- Displays a label for the postcode input field -->
+          <input type="text" class="form-control" id="postcode" required />
+          <!-- An input field for the user to enter a postcode -->
+        </div>
+        <br />
+        <div class="row justify-content-center">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="getFoodBanks()"
+          >
+            <!-- A button to submit the postcode and get the list of foodbanks -->
+            Search
+          </button>
+        </div>
+      </form>
+
+      <div id="foodbanks"></div>
+      <!-- A div to display the list of foodbanks after the search is completed -->
+    </div>
+      
+      <!-- A div to include a footer on the page -->
+      
+<div class="footer">
+    <p>Made by <a href="https://bretdigital.com" target="_blank">Bret Digital</a></p>
+  </div>
+      
+  </body>
+</html>
