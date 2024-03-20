@@ -24,5 +24,5 @@ This web application is designed to be responsive to different screen sizes, tha
 The Renfrewshire Foodbanks web application provides an easy and accessible way for users to find a list of food banks in the Renfrewshire area. It is designed to be user-friendly, responsive, and informative, providing essential information to users who may be in need of food assistance.
 
 # View app
-[https://cmack.tech/renfrewshirefoodbanks//](https://cmack.tech/renfrewshirefoodbanks/)
+[https://cmack.tech/renfrewshirefoodbanks](https://cmack.tech/renfrewshirefoodbanks/)
 
